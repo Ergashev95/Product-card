@@ -1,1 +1,117 @@
 @import "font.css";
+
+/* DESIGN SYSTEM */
+
+:root {
+    --Red: #C73B0F;
+    --Rose-900: #260F08;
+    --Rose-500: #87635A;
+    --Rose-400: #AD8A85;
+    --Rose-300: #CAAFA7;
+    --Rose-100: #F5EEEC;
+    --Rose-50: #FCF8F6;
+    --Green: #1EA575;
+    --Black: #000000;
+    --White: #FFFFFF;
+    --RedHatText: "Red Hat Text"
+}
+
+/* GLOBAL STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1248px;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0 auto;
+}
+
+
+.btn-plecholder {
+    display: inline-block;
+    padding: 16px 24px;
+    background-color: var(--Red);
+    color: var(--White);
+    font-family: var(--RedHatText);
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 999px;
+    transition: 0.5s;
+}
+.btn-plecholder:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%,
+    rgba(0, 0, 0, 0.25) 100%), var(--Red);
+    cursor: pointer;
+}
+
+.btn-click {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 160px;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 999px;
+    border: 1px solid var(--Rose-400, #AD8A85);
+    background-color: var(--White);
+    color: var(--Black);
+    font-family: var(--RedHatText);
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.btn-click:hover {
+    color: var(--Red);
+    cursor: pointer;
+}
+
+.btn-content {
+    display: flex;
+    column-gap: 10px;
+}
+
+.btn-active {
+    background-color: var(--Red);
+    max-width: 160px;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 999px;
+    border: 1px solid var(--Red);
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    color: var(--White);
+    transition: .3s;
+
+}
+
+.d-none {
+    opacity: 0;
+}
+
+
