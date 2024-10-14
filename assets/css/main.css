@@ -78,6 +78,7 @@ a {
     transition: 0.5s;
     position: relative;
     overflow: hidden;
+    z-index: 1;
 
 }
 
@@ -99,7 +100,7 @@ a {
     padding-bottom: 12px;
     position: absolute;
     left: 0;
-    top: 0;
+    bottom: 0;
     border-radius: 999px;
     border: 1px solid var(--Red);
     display: flex;
@@ -114,6 +115,90 @@ a {
     opacity: 0;
 }
 
+body {
+    font-family: var(--RedHatText);
+    display: flex;
+    flex-direction: column;
+    background: var(--Rose-50);
+}
+
+
+/* DESSERTS SECTION */
+.desserts {
+    padding-top: 88px;
+    padding-bottom: 88px;
+}
+.desserts-headline {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 32px;
+}
+.products {
+    display: flex;
+    column-gap: 24px;
+    max-width: 800px;
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 32px;
+
+}
+.products-card {
+    max-width: 250px;
+    width: 100%;
+}
+.products-image {
+    width: 100%;
+    height: 240px;
+    border-radius: 8px;
+
+    position: relative;
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.products-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    z-index: -1;
+
+}
+.products-btn {
+    position: absolute;
+    bottom: -10%;
+    z-index: 99;
+    margin: auto;
+
+}
+.products-body {
+    padding-top: 38px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+.products-category {
+    color: var(--Rose-500);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.products-name {
+    color: var(--Rose-900);
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.products-price {
+    color: var(--Red);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* DESSERTS SECTION */
 
 
 
